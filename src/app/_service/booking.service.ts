@@ -7,8 +7,8 @@ const baseUrl = 'http://localhost:8082/FlightBooking/BookFlight/';
 })
 export class BookingService {
 
-  constructor(private http:HttpClient) { }
-  create(data:any,Id:any): Observable<any> {
-    return this.http.post(baseUrl+Id, data);
+  constructor(private http: HttpClient) { }
+  create(data: any, Id: any): Observable<any> {
+    return this.http.post(baseUrl + Id, data);
   }
 }

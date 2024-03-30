@@ -6,8 +6,8 @@ const baseUrl = 'http://localhost:8082/FlightBooking/booking/';
 })
 export class CancelBookingService {
 
-  constructor(private http:HttpClient) { }
-  cancelBooking(booking_id:any,mailId:any,data:any){
-    return this.http.put(baseUrl+booking_id+"/"+mailId, data);
+  constructor(private http: HttpClient) { }
+  cancelBooking(booking_id: any, mailId: any, data: any) {
+    return this.http.put(baseUrl + booking_id + "/" + mailId, data);
   }
 }
