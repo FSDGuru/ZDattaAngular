@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-const baseUrl = 'http://localhost:8082/FlightBooking/booking/';
+const baseUrl = 'http://35.154.166.215:8082/FlightBooking/booking/';
 @Injectable({
   providedIn: 'root'
 })

@@ -7,7 +7,7 @@ import { Flight } from '../models/flight.model';
   providedIn: 'root',
 })
 export class FlightSearchService {
-  FlightSearchApi = 'http://localhost:8581/Search/find/';
+  FlightSearchApi = 'http://35.154.166.215:8581/Search/find/';
 
   constructor(private Http: HttpClient) { }
 

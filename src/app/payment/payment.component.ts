@@ -21,7 +21,7 @@ export class PaymentComponent implements OnInit {
     private tokenStorageService: TokenStorageService,
     private route: ActivatedRoute,
     private router: Router
-  ) {}
+  ) { }
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
       this.amount = params.get('amount')!;
@@ -38,7 +38,7 @@ export class PaymentComponent implements OnInit {
   options = {
     key: '',
     amount: this.amount,
-    name: 'Adarsh Gour',
+    name: 'Dattatray Vetal',
     description: 'FinalDestination',
     image: '',
     order_id: '',

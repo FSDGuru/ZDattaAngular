@@ -5,33 +5,33 @@ import { Observable } from 'rxjs';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-  };
-  declare var Razorpay: any;
+};
+declare var Razorpay: any;
 
- const API_URL="http://localhost:8082/api/"
+const API_URL = "http://35.154.166.215:8082/api/"
 @Injectable({
   providedIn: 'root'
 })
 export class OrderServiceService {
- 
+
   constructor(private http: HttpClient) {
 
   }
- 
-  createOrder(order:any): Observable<any> {
-      return this.http.post("http://localhost:8082/api/order", {
+
+  createOrder(order: any): Observable<any> {
+    return this.http.post("http://35.154.166.215:8082/api/order", {
       customerName: order.name,
       email: order.email,
       phoneNumber: order.phone,
       amount: order.amount
-      }, httpOptions);
+    }, httpOptions);
   }
- 
-  updateOrder(order:any): Observable<any> {
-      return this.http.put("http://localhost:8082/api/order", {
+
+  updateOrder(order: any): Observable<any> {
+    return this.http.put("http://35.154.166.215:8082/api/order", {
       razorpayOrderId: order.razorpay_order_id,
       razorpayPaymentId: order.razorpay_payment_id,
       razorpaySignature: order.razorpay_signature
-      }, httpOptions);
+    }, httpOptions);
   }
 }

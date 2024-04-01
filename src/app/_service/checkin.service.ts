@@ -8,7 +8,7 @@ import { Checkin } from '../models/checkin.model';
   providedIn: 'root'
 })
 export class CheckinService {
-  CheckInApi = 'http://localhost:8084/attendee/';
+  CheckInApi = 'http://35.154.166.215:8084/attendee/';
   constructor(private Http: HttpClient) { }
 
   GetTicket(booking_id: any) {

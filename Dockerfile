@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM --platform=linux/amd64 nginx:latest
 
 WORKDIR /usr/share/nginx/html
 
